@@ -1,4 +1,5 @@
-def caeser_cipher(string, number)
+class Caeser
+  def caeser_cipher(string, number)
     # Turn the string into an array of ASCII Values
     string_array = string.bytes
     # Keep any shift into the range of a-z or A-Z
@@ -29,3 +30,4 @@ def caeser_cipher(string, number)
     #Join together the array into a string
     cipher = string_array.join("")
   end
+end
